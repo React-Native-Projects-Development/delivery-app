@@ -15,6 +15,7 @@ const Tabs = () => {
     <Tab.Navigator
       screenOptions={{
         tabBarShowLabel: false,
+        headerShown: false,
         tabBarStyle: {
           backgroundColor: COLORS.transparent,
           borderTopWidth: 0,
