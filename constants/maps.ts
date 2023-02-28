@@ -1,3 +1,3 @@
-const GOOGLE_API_KEY = 'AIzaSyAPwrZJzWsB_DGubR3d4TMmoh3vXuZawNc';
+import GOOGLE_MAPS_API_KEY from '@env';
 
-export default GOOGLE_API_KEY;
+export default GOOGLE_MAPS_API_KEY;
