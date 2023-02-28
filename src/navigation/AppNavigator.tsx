@@ -7,11 +7,11 @@ import Tabs from './Tabs';
 
 export type RootStackParams = {
   Main: undefined;
-  OrderDelivery: undefined;
   Restaurant: {
     item: any;
     location: any;
   };
+  OrderDelivery: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParams>();
@@ -22,8 +22,8 @@ const StackNavigator = () => {
       screenOptions={{headerShown: false}}
       initialRouteName="Main">
       <Stack.Screen name="Main" component={Tabs} />
-      <Stack.Screen name="OrderDelivery" component={OrderDelivery} />
       <Stack.Screen name="Restaurant" component={Restaurant} />
+      <Stack.Screen name="OrderDelivery" component={OrderDelivery} />
     </Stack.Navigator>
   );
 };
