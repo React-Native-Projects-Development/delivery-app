@@ -5,7 +5,16 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {OrderDelivery, Restaurant} from '../screens';
 import Tabs from './Tabs';
 
-const Stack = createNativeStackNavigator();
+export type RootStackParams = {
+  Main: undefined;
+  OrderDelivery: undefined;
+  Restaurant: {
+    item: any;
+    location: any;
+  };
+};
+
+const Stack = createNativeStackNavigator<RootStackParams>();
 
 const StackNavigator = () => {
   return (
